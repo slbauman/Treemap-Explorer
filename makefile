@@ -1,10 +1,11 @@
 CC = g++
 CFLAGS = -g -Wall
 TARGET = stm
-OUT_DIR = .bin
 RM = rm -rf
 LDLIBS = -lSDL2
 PREFIX = /usr/local
+
+.PHONY: all
 
 $(TARGET): $(TARGET).cc
 	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cc $(LDLIBS)
