@@ -26,7 +26,7 @@ void draw_row(SDL_Renderer *r, int items_sum, vector<int> row,
 			};
 		}
 		row_sum -= row.at(i);
-		SDL_SetRenderDrawColor(r, 255, 255, 255, 255);
+		SDL_SetRenderDrawColor(r, 50, 155, 255, 255);
 		SDL_RenderFillRect(r, &rect);
 
 		SDL_Rect rect2 = {rect.x + 1, rect.y + 1, rect.w - 2, rect.h - 2};
