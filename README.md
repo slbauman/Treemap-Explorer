@@ -5,11 +5,10 @@ This program will visualize the size of files and folders on a filesystem. It
 is currently a work in progress.
 
 ## Requirements:
-SDL2
-SDL2_ttf
+* SDL2
+* SDL2_ttf
 
 ## Usage:
-Run the following to compile and run.
 `make && ./tme`
 
 ## TODO:
