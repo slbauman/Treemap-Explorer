@@ -13,7 +13,6 @@ stm.o : stm.cc stm.h
 tme.o : tme.cc stm.h
 	$(CC) -c tme.cc
 
-
 clean:
 	$(RM) tme tme.o stm.o
 
