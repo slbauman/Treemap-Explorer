@@ -1,24 +1,19 @@
 CC = g++
 CFLAGS = -g -Wall
-TARGET = stm
 RM = rm -rf
-LDLIBS = -lSDL2
+LDLIBS = -lSDL2 -lSDL2_ttf
 PREFIX = /usr/local
 
-.PHONY: all
+tme: tme.o stm.o
+	$(CC) $(CFLAGS) -o tme tme.o stm.o $(LDLIBS)
 
-$(TARGET): $(TARGET).cc
-	$(CC) $(CFLAGS) -o $(TARGET) $(TARGET).cc $(LDLIBS)
+stm.o : stm.cc stm.h
+	$(CC) -c stm.cc
+
+tme.o : tme.cc stm.h
+	$(CC) -c tme.cc
+
 
 clean:
-	$(RM) $(TARGET)
-
-.PHONY: install
-install: stm
-	mkdir -p $(DESTDIR)$(PREFIX)/bin
-	cp $< $(DESTDIR)$(PREFIX)/bin/stm
-
-.PHONY: uninstall
-uninstall:
-	rm -f $(DESTDIR)$(PREFIX)/bin/stm
+	$(RM) tme tme.o stm.o
 
