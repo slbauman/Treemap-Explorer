@@ -1,3 +1,7 @@
+// stm.cc
+// Squarified treemap generator
+// Samuel Bauman 2021
+
 #include <numeric>
 #include <vector>
 #include <math.h>

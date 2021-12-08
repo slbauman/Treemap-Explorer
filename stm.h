@@ -1,4 +1,6 @@
 // stm.h
+// 
+// Samuel Bauman 2021
 
 std::vector<int> layout_row(
 		int items_sum,

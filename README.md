@@ -4,18 +4,20 @@ Working name for project.
 This program will visualize the size of files and folders on a filesystem. It
 is currently a work in progress.
 
-## Requirements:
+![Screenshot](screenshot.png?raw=true "Treemap Explorer Screenshot")
+
+## Dependencies:
 * SDL2
 * SDL2_ttf
 
 ## Usage:
 `make && ./tme`
 
-## TODO:
-* Read sizes from files and folders.
+## Todo:
+* Read sizes from files and folders. ✓
 * Display text for each item.
-* Change color of items.
+* Change color of items. ✓
 
-## GOALS:
-* Show items nested in folders and add a depth limit.
+## Goals:
+* Show items nested in folders and add a depth limit. ✓
 * Allow user to click on a folder to "open" the folder.

@@ -3,3 +3,4 @@ stm
 tme
 tme.o
 stm.o
+scan_dir.o
