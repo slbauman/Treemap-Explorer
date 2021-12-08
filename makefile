@@ -1,7 +1,7 @@
 CC = g++
 CFLAGS = -g -Wall
 RM = rm -rf
-LDLIBS = -lSDL2 -lSDL2_ttf
+LDLIBS = -lSDL2
 
 tme: tme.o stm.o scan_dir.o
 	$(CC) $(CFLAGS) -o tme tme.o stm.o scan_dir.o $(LDLIBS)
