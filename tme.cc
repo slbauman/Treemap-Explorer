@@ -95,9 +95,6 @@ int main() {
 	//	TTF_OpenFont("font/victor_mono/VictorMono-Medium.ttf", 14);
 	SDL_Event event;
 	
-	vector<int> sizes;// {6, 6, 4, 3, 2, 2, 1};
-	vector<string> names;// {"six", "six", "four", "three", "two", "two", "one"};
-	
 	fs_item working_dir = scan_dir(get_current_dir_name());
 	
 	bool redraw = true;
