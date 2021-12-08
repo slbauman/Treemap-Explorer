@@ -8,7 +8,6 @@ is currently a work in progress.
 
 ## Dependencies:
 * SDL2
-* SDL2_ttf
 
 ## Usage:
 `make && ./tme`
@@ -19,5 +18,5 @@ is currently a work in progress.
 * Change color of items. ✓
 
 ## Goals:
-* Show items nested in folders and add a depth limit. ✓
+* Show items nested in folders and add a depth limit. 
 * Allow user to click on a folder to "open" the folder.
